@@ -1,0 +1,44 @@
+public class Triangle {
+
+
+    public static void main(String[] args) {
+        System.out.println("First triangle.");
+        for (int x = 0; x < 3; x++) {
+            System.out.println();
+            for (int y = 0; y < 3; y++) {
+                if (x >= y) {
+                    System.out.print("* ");
+                }
+            }
+            System.out.println();
+        }
+        System.out.println("Second triangle.");
+        for (int x = 0; x < 3; x++) {
+            System.out.println();
+            for (int y = 0; y < 3; y++) {
+                if (y >= x) {
+                    System.out.print("* ");
+                } else
+                {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+        System.out.println("Third triangle.");
+        for (int x = 0; x < 3; x++) {
+            System.out.println();
+            for (int y = 0; y < 3; y++) {
+                if (y + x >= 2) {
+                    System.out.print("* ");
+                } else
+                {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+        System.out.println();
+        System.out.print("Finish");
+    }
+}
